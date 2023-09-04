@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <link rel="stylesheet" href="sumi.css">
+</head>
+<style>
+    .text-white{
+        color: rgb(230, 230, 220);
+        font-size: 15px;
+        }
+    #element,
+    .footer{
+        color: rgb(15, 3, 9);
+        font-style: italic;
+        display: flex;
+        width: 100px;
+        height: 100px;
+        justify-content: center;
+        margin-top: 100px;
+       
+        }
+</style>
+<body>
+    <div class="container">
+        <div class="sun"><span class="text-white">sun</span></div>
+        <div class="earth">
+            <div class="moon">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="right">
+                <span id="element"></span>
+           </div>
+        </div>
+    </footer>
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+<!-- Setup and start animation! -->
+<script>
+    var typed = new Typed('#element', {
+        strings: ['@7Sumaiya...Animation.......'],
+        typeSpeed: 50,
+    });
+</script>
+
+</body>
+</html>
